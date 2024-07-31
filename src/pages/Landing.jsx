@@ -10,21 +10,21 @@ const Landing = () => {
   };
 
   return (
-    <div className="flex flex-col gap-6 justify-center items-center px-4">
-      <div className="flex justify-center items-center gap-12 md:gap-24">
+    <div className="flex flex-col gap-6 justify-center items-center">
+      <div className="justify-center items-center gap-24 hidden md:flex">
         <Circle item="rock" variant="large" />
-        <div className="hidden md:block long-arrow-left"></div>
+        <div className="long-arrow-left hidden"></div>
         <Circle item="paper" variant="large" />
       </div>
       <button
         onClick={handleClick}
-        className="bg-[#C38370] p-2 text-[#F6EEE0] w-24 md:w-[10%] rounded-md border-solid border-4 border-[#A45C40] font-bold mb-4"
+        className="bg-[#A45C40] px-4 py-2 text-[#F6EEE0] w-fit rounded-md border-solid border-2 border-[#A45C40] hover:bg-[#C38370] font-bold mt-60 md:mb-4 md:m-0 ease-in duration-100"
       >
         PLAY!
       </button>
-      <div className="hidden md:block long-arrow-left-2 fixed right-[38%]"></div>
-      <div className="hidden md:block long-arrow-right fixed left-[38%]"></div>
-      <div className="flex justify-center items-center">
+      <div className="long-arrow-left-2 fixed right-[38%]"></div>
+      <div className="long-arrow-right fixed left-[38%] hidden"></div>
+      <div className="justify-center items-center hidden md:flex">
         <Circle item="scissors" variant="large" />
       </div>
     </div>

@@ -21,11 +21,16 @@ const Circle = ({ item, variant }) => {
     size2 = "240px";
     size3 = "190px";
     size4 = "100px";
-  } else if (variant === "small") {
+  } else if (variant === "medium") {
     size = "94px";
     size2 = "90px";
     size3 = "70px";
     size4 = "30px";
+  } else if (variant === "small") {
+        size = "60px";
+        size2 = "57px";
+        size3 = "40px";
+        size4 = "25px";
   }
 
   const handleClick = () => {
